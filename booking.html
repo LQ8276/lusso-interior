@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>在线预约 | LUSSO·意式轻奢室内设计</title>
+  <meta name="description" content="预约LUSSO INTERIOR免费设计咨询，一对一专属服务，为您打造理想居所。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: "#D4A574", "gold-dark": "#C4966A", "gold-light": "#E8D5C0",
+            cream: "#F5F0EB", charcoal: "#1A1A1A",
+            "gray-luxe": "#8C8C8C", "gray-light": "#F2F2F2",
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream text-[#4A4A4A] font-sans">
+
+  <!-- HEADER -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 scrolled">
+    <nav class="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+      <a href="index.html" class="nav-logo font-serif text-2xl lg:text-3xl font-bold text-charcoal tracking-wide">LUSSO<span class="text-gold">.</span><span class="block text-[10px] font-sans font-light tracking-[0.3em] text-gray-luxe -mt-1">INTERIOR DESIGN</span></a>
+      <div class="hidden lg:flex items-center space-x-10">
+        <a href="index.html" class="nav-link">首页</a><a href="cases.html" class="nav-link">设计案例</a><a href="services.html" class="nav-link">服务项目</a><a href="team.html" class="nav-link">设计师</a><a href="about.html" class="nav-link">关于我们</a><a href="contact.html" class="nav-link">联系我们</a>
+      </div>
+      <a href="booking.html" class="hidden lg:inline-flex items-center gap-2 bg-gold text-white px-6 py-2.5 text-sm font-medium tracking-wider hover:bg-gold-dark rounded"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>免费预约</a>
+      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2"><span class="block w-6 h-[1.5px] bg-charcoal"></span><span class="block w-6 h-[1.5px] bg-charcoal"></span><span class="block w-5 h-[1.5px] bg-charcoal"></span></button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden bg-cream/98 backdrop-blur-xl border-b border-gold/10"><div class="px-6 py-6 space-y-4"><a href="index.html" class="block py-2 text-base text-charcoal hover:text-gold">首页</a><a href="cases.html" class="block py-2 text-base text-charcoal hover:text-gold">设计案例</a><a href="services.html" class="block py-2 text-base text-charcoal hover:text-gold">服务项目</a><a href="team.html" class="block py-2 text-base text-charcoal hover:text-gold">设计师团队</a><a href="about.html" class="block py-2 text-base text-charcoal hover:text-gold">关于我们</a><a href="contact.html" class="block py-2 text-base text-charcoal hover:text-gold">联系我们</a><a href="booking.html" class="block mt-4 bg-gold text-white text-center py-3 text-sm rounded">免费预约设计</a></div></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="pt-32 pb-16 lg:pt-40 lg:pb-20 px-6 relative img-placeholder-dark">
+    <div class="absolute inset-0 bg-charcoal/60"></div>
+    <div class="container mx-auto max-w-5xl relative z-10 text-center">
+      <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; BOOKING &mdash;</span>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif text-white mt-6 mb-6">预约设计咨询</h1>
+      <div class="divider-gold"></div>
+      <p class="text-white/60 mt-6 max-w-xl mx-auto text-sm">填写以下信息，我们将为您匹配最合适的设计师，并在24小时内与您联系。</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="py-16 lg:py-24 px-6">
+    <div class="container mx-auto max-w-3xl">
+      <div class="bg-white p-8 lg:p-14 reveal">
+        <form class="booking-form space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div><label class="form-label">您的姓名 *</label><input type="text" class="form-input" placeholder="例如：李先生" required /></div>
+            <div><label class="form-label">联系电话 *</label><input type="tel" class="form-input" placeholder="请输入手机号" required /></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div><label class="form-label">房屋面积 (m&sup2;)</label><input type="number" class="form-input" placeholder="例如：300" /></div>
+            <div><label class="form-label">物业类型</label><select class="form-input"><option value="">请选择</option><option>独栋别墅</option><option>联排别墅</option><option>大平层</option><option>高层公寓</option><option>商业空间</option></select></div>
+          </div>
+          <div><label class="form-label">偏好风格</label><div class="flex flex-wrap gap-3"><label class="flex items-center gap-2 text-sm text-gray-luxe cursor-pointer"><input type="checkbox" name="style" value="luxury" class="accent-gold" /> 意式轻奢</label><label class="flex items-center gap-2 text-sm text-gray-luxe cursor-pointer"><input type="checkbox" name="style" value="minimal" class="accent-gold" /> 现代极简</label><label class="flex items-center gap-2 text-sm text-gray-luxe cursor-pointer"><input type="checkbox" name="style" value="classic" class="accent-gold" /> 新古典</label><label class="flex items-center gap-2 text-sm text-gray-luxe cursor-pointer"><input type="checkbox" name="style" value="natural" class="accent-gold" /> 自然原木</label><label class="flex items-center gap-2 text-sm text-gray-luxe cursor-pointer"><input type="checkbox" name="style" value="other" class="accent-gold" /> 其他</label></div></div>
+          <div><label class="form-label">需求描述 *</label><textarea class="form-input" rows="4" placeholder="请简要描述您的设计需求、期望风格、预算范围等信息" required></textarea></div>
+          <div><label class="form-label">联系邮箱</label><input type="email" class="form-input" placeholder="选填，用于接收方案资料" /></div>
+          <button type="submit" class="btn-primary w-full justify-center !py-4">提交预约申请</button>
+          <p class="text-xs text-gray-luxe text-center">提交即表示您同意我们的隐私政策，我们承诺保护您的个人信息安全。</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white/70 py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="reveal"><a href="index.html" class="font-serif text-2xl font-bold text-white">LUSSO<span class="text-gold">.</span></a><p class="text-sm text-white/40 mt-3">意式轻奢室内设计工作室</p></div>
+        <div class="reveal reveal-delay-1"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">快速链接</h4><ul class="space-y-3"><li><a href="index.html" class="footer-link">首页</a></li><li><a href="cases.html" class="footer-link">设计案例</a></li><li><a href="services.html" class="footer-link">服务项目</a></li><li><a href="team.html" class="footer-link">设计师团队</a></li></ul></div>
+        <div class="reveal reveal-delay-2"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">服务</h4><ul class="space-y-3"><li><a href="services.html" class="footer-link">全案设计</a></li><li><a href="services.html" class="footer-link">软装陈设</a></li><li><a href="services.html" class="footer-link">精装改造</a></li></ul></div>
+        <div class="reveal reveal-delay-3"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">联系</h4><ul class="space-y-3 text-sm"><li>上海市徐汇区衡山路880号</li><li>400-xxx-xxxx</li><li>hello@lusso-design.com</li></ul></div>
+      </div>
+      <div class="border-t border-white/10 mt-16 pt-8 text-center"><p class="text-xs text-white/30">&copy; 2025 LUSSO INTERIOR. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <a href="booking.html" class="floating-cta"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>免费预约设计</a>
+  <script src="main.js"></script>
+</body>
+</html>
+

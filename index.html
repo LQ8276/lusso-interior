@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUSSO·意式轻奢室内设计 | 高端别墅·大平层设计工作室</title>
+  <meta name="description" content="LUSSO INTERIOR — 专注高端私宅、别墅、大平层室内设计，意式轻奢与现代极简风格，全案设计落地服务。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: "#D4A574",
+            "gold-dark": "#C4966A",
+            "gold-light": "#E8D5C0",
+            cream: "#F5F0EB",
+            charcoal: "#1A1A1A",
+            "gray-luxe": "#8C8C8C",
+            "gray-light": "#F2F2F2",
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream text-[#4A4A4A] font-sans">
+
+  <header id="header" class="fixed top-0 left-0 w-full z-50">
+    <nav class="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+      <a href="index.html" class="nav-logo font-serif text-2xl lg:text-3xl font-bold text-charcoal tracking-wide transition-all duration-500">
+        LUSSO<span class="text-gold">.</span>
+        <span class="block text-[10px] font-sans font-light tracking-[0.3em] text-gray-luxe -mt-1">INTERIOR DESIGN</span>
+      </a>
+      <div class="hidden lg:flex items-center space-x-10">
+        <a href="index.html" class="nav-link active">首页</a>
+        <a href="cases.html" class="nav-link">设计案例</a>
+        <a href="services.html" class="nav-link">服务项目</a>
+        <a href="team.html" class="nav-link">设计师</a>
+        <a href="about.html" class="nav-link">关于我们</a>
+        <a href="contact.html" class="nav-link">联系我们</a>
+      </div>
+      <a href="booking.html" class="hidden lg:inline-flex items-center gap-2 bg-gold text-white px-6 py-2.5 text-sm font-medium tracking-wider hover:bg-gold-dark transition-all duration-300 rounded">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        免费预约
+      </a>
+      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="菜单">
+        <span class="block w-6 h-[1.5px] bg-charcoal transition-all duration-300"></span>
+        <span class="block w-6 h-[1.5px] bg-charcoal transition-all duration-300"></span>
+        <span class="block w-5 h-[1.5px] bg-charcoal transition-all duration-300"></span>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden bg-cream/98 backdrop-blur-xl border-b border-gold/10">
+      <div class="px-6 py-6 space-y-4">
+        <a href="index.html" class="block py-2 text-base font-medium text-charcoal hover:text-gold transition-colors">首页</a>
+        <a href="cases.html" class="block py-2 text-base font-medium text-charcoal hover:text-gold transition-colors">设计案例</a>
+        <a href="services.html" class="block py-2 text-base font-medium text-charcoal hover:text-gold transition-colors">服务项目</a>
+        <a href="team.html" class="block py-2 text-base font-medium text-charcoal hover:text-gold transition-colors">设计师团队</a>
+        <a href="about.html" class="block py-2 text-base font-medium text-charcoal hover:text-gold transition-colors">关于我们</a>
+        <a href="contact.html" class="block py-2 text-base font-medium text-charcoal hover:text-gold transition-colors">联系我们</a>
+        <a href="booking.html" class="block mt-4 bg-gold text-white text-center py-3 text-sm font-medium tracking-wider rounded">免费预约设计</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-slider" id="hero-slider">
+    <div class="hero-slide active">
+      <div class="absolute inset-0 bg-gradient-to-br from-charcoal/70 via-charcoal/40 to-transparent z-10"></div>
+      <div class="absolute inset-0 img-placeholder-luxury flex items-center justify-center">
+        <div class="text-center text-white/10">
+          <svg class="w-24 h-24 mx-auto opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <p class="text-sm tracking-widest mt-4">&larr; 替换为 Hero 大图</p>
+        </div>
+      </div>
+      <div class="relative z-20 h-full flex items-center">
+        <div class="container mx-auto px-6 lg:px-12">
+          <div class="slide-content max-w-2xl">
+            <span class="inline-block text-gold text-sm tracking-[0.25em] uppercase mb-6 font-medium">&mdash; 意式轻奢 · 定义格调</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-6">于细节处<br /><span class="text-gold">见奢华</span></h1>
+            <p class="text-white/70 text-base md:text-lg leading-relaxed mb-10 max-w-lg">专注高端私宅与别墅全案设计，以克制美学诠释意式生活哲学。</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="cases.html" class="btn-primary">探索设计案例</a>
+              <a href="booking.html" class="btn-outline !border-white/40 !text-white hover:!bg-white hover:!text-charcoal">预约设计咨询</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-charcoal/40 to-transparent z-10"></div>
+      <div class="absolute inset-0 img-placeholder-dark flex items-center justify-center">
+        <div class="text-center text-white/10">
+          <svg class="w-24 h-24 mx-auto opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <p class="text-sm tracking-widest mt-4">&larr; 替换为 Hero 大图</p>
+        </div>
+      </div>
+      <div class="relative z-20 h-full flex items-center">
+        <div class="container mx-auto px-6 lg:px-12">
+          <div class="slide-content max-w-2xl">
+            <span class="inline-block text-gold text-sm tracking-[0.25em] uppercase mb-6 font-medium">&mdash; 现代极简 · 少即是多</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-6">以极简之形<br /><span class="text-gold">承载生活</span></h1>
+            <p class="text-white/70 text-base md:text-lg leading-relaxed mb-10 max-w-lg">摒弃多余装饰，回归材质与光影的本质。</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="cases.html" class="btn-primary">探索设计案例</a>
+              <a href="booking.html" class="btn-outline !border-white/40 !text-white hover:!bg-white hover:!text-charcoal">预约设计咨询</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <div class="absolute inset-0 bg-gradient-to-tl from-charcoal/70 via-charcoal/30 to-transparent z-10"></div>
+      <div class="absolute inset-0 img-placeholder-warm flex items-center justify-center">
+        <div class="text-center text-white/20">
+          <svg class="w-24 h-24 mx-auto opacity-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <p class="text-sm tracking-widest mt-4">&larr; 替换为 Hero 大图</p>
+        </div>
+      </div>
+      <div class="relative z-20 h-full flex items-center">
+        <div class="container mx-auto px-6 lg:px-12">
+          <div class="slide-content max-w-2xl">
+            <span class="inline-block text-gold text-sm tracking-[0.25em] uppercase mb-6 font-medium">&mdash; 别墅大宅 · 定制专属</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight mb-6">为每一栋宅邸<br /><span class="text-gold">量身而作</span></h1>
+            <p class="text-white/70 text-base md:text-lg leading-relaxed mb-10 max-w-lg">十余年高端住宅设计经验，为每一位业主打造独一无二的理想居所。</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="cases.html" class="btn-primary">探索设计案例</a>
+              <a href="booking.html" class="btn-outline !border-white/40 !text-white hover:!bg-white hover:!text-charcoal">预约设计咨询</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex gap-3">
+      <button class="hero-dot active" aria-label="Slide 1"></button>
+      <button class="hero-dot" aria-label="Slide 2"></button>
+      <button class="hero-dot" aria-label="Slide 3"></button>
+    </div>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+      <svg class="w-5 h-5 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </div>
+  </section>
+
+  <!-- Brand -->
+  <section class="py-24 lg:py-32 px-6">
+    <div class="container mx-auto max-w-5xl">
+      <div class="text-center reveal">
+        <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; ABOUT &mdash;</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mt-6 mb-8 text-charcoal">以意式美学，重塑居住想象</h2>
+        <div class="divider-gold mb-8"></div>
+        <p class="text-gray-luxe text-base md:text-lg leading-relaxed max-w-3xl mx-auto">LUSSO INTERIOR 是一间专注于高端住宅室内设计的工作室。我们相信，设计不是风格的堆砌，而是生活方式的重塑。从意式轻奢到现代极简，每一种风格都承载着对居住者深刻的理解与尊重。十余年来，我们为数百位业主实现了理想居所，每一套作品，都是一次关于美的对话。</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 reveal reveal-delay-2">
+        <div class="text-center"><div class="counter text-4xl md:text-5xl font-serif text-gold" data-target="500" data-suffix="+">0</div><p class="text-sm text-gray-luxe mt-2 tracking-wide">落地项目</p></div>
+        <div class="text-center"><div class="counter text-4xl md:text-5xl font-serif text-gold" data-target="15" data-suffix="+">0</div><p class="text-sm text-gray-luxe mt-2 tracking-wide">设计经验(年)</p></div>
+        <div class="text-center"><div class="counter text-4xl md:text-5xl font-serif text-gold" data-target="98" data-suffix="%">0</div><p class="text-sm text-gray-luxe mt-2 tracking-wide">客户满意度</p></div>
+        <div class="text-center"><div class="counter text-4xl md:text-5xl font-serif text-gold" data-target="30" data-suffix="+">0</div><p class="text-sm text-gray-luxe mt-2 tracking-wide">国际奖项</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-24 lg:py-32 px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; SERVICES &mdash;</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mt-6 mb-6 text-charcoal">全案设计服务体系</h2>
+        <div class="divider-gold"></div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-10">
+        <div class="card-hover bg-cream p-10 lg:p-12 reveal reveal-delay-1">
+          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-8"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg></div>
+          <h3 class="text-xl font-serif mb-4 text-charcoal">全案设计</h3>
+          <p class="text-gray-luxe text-sm leading-relaxed mb-6">从空间规划、硬装设计到软装搭配，提供完整的全案设计服务。确保设计理念从图纸到实景的高度还原。</p>
+          <a href="services.html" class="text-gold text-sm font-medium tracking-wider hover:underline underline-offset-4">了解更多 &rarr;</a>
+        </div>
+        <div class="card-hover bg-cream p-10 lg:p-12 reveal reveal-delay-2">
+          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-8"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></div>
+          <h3 class="text-xl font-serif mb-4 text-charcoal">软装陈设</h3>
+          <p class="text-gray-luxe text-sm leading-relaxed mb-6">精选全球家居品牌，从家具、灯具到艺术品陈设，以专业眼光为空间挑选每一件单品。</p>
+          <a href="services.html" class="text-gold text-sm font-medium tracking-wider hover:underline underline-offset-4">了解更多 &rarr;</a>
+        </div>
+        <div class="card-hover bg-cream p-10 lg:p-12 reveal reveal-delay-3">
+          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-8"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg></div>
+          <h3 class="text-xl font-serif mb-4 text-charcoal">精装改造</h3>
+          <p class="text-gray-luxe text-sm leading-relaxed mb-6">针对精装房提供定制化微改造方案，通过材质、色彩与灯光升级，实现空间质感的全面提升。</p>
+          <a href="services.html" class="text-gold text-sm font-medium tracking-wider hover:underline underline-offset-4">了解更多 &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <section class="py-24 lg:py-32 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+        <div>
+          <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; PORTFOLIO &mdash;</span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mt-6 text-charcoal">精选设计案例</h2>
+        </div>
+        <a href="cases.html" class="mt-4 md:mt-0 text-gold text-sm font-medium tracking-wider hover:underline underline-offset-4">查看全部案例 &rarr;</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div class="card-hover case-item reveal reveal-delay-1" data-category="luxury">
+          <a href="javascript:void(0)" class="block">
+            <div class="card-image relative overflow-hidden aspect-[4/3] img-placeholder-luxury">
+              <img src="images/case-1.jpg" alt="意式轻奢" class="w-full h-full object-cover lightbox-trigger" onerror="this.style.display='none'" />
+              <div class="absolute top-4 left-4"><span class="tag bg-white/90 text-charcoal !border-0 text-xs">意式轻奢</span></div>
+            </div>
+            <div class="pt-6"><h3 class="text-lg font-serif text-charcoal">静安府 · 大平层</h3><p class="text-gray-luxe text-sm mt-2">320m&sup2; · 全案设计 · 2025</p></div>
+          </a>
+        </div>
+        <div class="card-hover case-item reveal reveal-delay-2" data-category="minimal">
+          <a href="javascript:void(0)" class="block">
+            <div class="card-image relative overflow-hidden aspect-[4/3] img-placeholder-dark">
+              <img src="images/case-2.jpg" alt="现代极简" class="w-full h-full object-cover lightbox-trigger" onerror="this.style.display='none'" />
+              <div class="absolute top-4 left-4"><span class="tag bg-white/90 text-charcoal !border-0 text-xs">现代极简</span></div>
+            </div>
+            <div class="pt-6"><h3 class="text-lg font-serif text-charcoal">佘山·独栋别墅</h3><p class="text-gray-luxe text-sm mt-2">580m&sup2; · 全案设计 · 2024</p></div>
+          </a>
+        </div>
+        <div class="card-hover case-item reveal reveal-delay-3" data-category="villa">
+          <a href="javascript:void(0)" class="block">
+            <div class="card-image relative overflow-hidden aspect-[4/3] img-placeholder-warm">
+              <img src="images/case-3.jpg" alt="别墅大宅" class="w-full h-full object-cover lightbox-trigger" onerror="this.style.display='none'" />
+              <div class="absolute top-4 left-4"><span class="tag bg-white/90 text-charcoal !border-0 text-xs">别墅大宅</span></div>
+            </div>
+            <div class="pt-6"><h3 class="text-lg font-serif text-charcoal">西郊·庄园别墅</h3><p class="text-gray-luxe text-sm mt-2">750m&sup2; · 全案设计 · 2024</p></div>
+          </a>
+        </div>
+        <div class="card-hover case-item reveal reveal-delay-4" data-category="apartment">
+          <a href="javascript:void(0)" class="block">
+            <div class="card-image relative overflow-hidden aspect-[4/3] img-placeholder-luxury">
+              <img src="images/case-4.jpg" alt="大平层" class="w-full h-full object-cover lightbox-trigger" onerror="this.style.display='none'" />
+              <div class="absolute top-4 left-4"><span class="tag bg-white/90 text-charcoal !border-0 text-xs">大平层</span></div>
+            </div>
+            <div class="pt-6"><h3 class="text-lg font-serif text-charcoal">汤臣一品·江景公寓</h3><p class="text-gray-luxe text-sm mt-2">435m&sup2; · 全案设计 · 2025</p></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-24 lg:py-32 px-6 bg-white">
+    <div class="container mx-auto max-w-6xl">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; TEAM &mdash;</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mt-6 mb-6 text-charcoal">核心设计团队</h2>
+        <div class="divider-gold"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="card-hover text-center reveal reveal-delay-1">
+          <div class="w-40 h-40 mx-auto rounded-full overflow-hidden mb-6 img-placeholder-luxury"><img src="images/team-1.jpg" alt="张奕辰" class="w-full h-full object-cover" onerror="this.style.display='none'" /></div>
+          <h3 class="text-lg font-serif text-charcoal">张奕辰</h3>
+          <p class="text-gold text-xs tracking-wider uppercase mt-1">创始合伙人 · 设计总监</p>
+          <p class="text-gray-luxe text-sm mt-4 leading-relaxed max-w-xs mx-auto">15年高端住宅设计经验，曾任意大利FCA设计机构主创。</p>
+        </div>
+        <div class="card-hover text-center reveal reveal-delay-2">
+          <div class="w-40 h-40 mx-auto rounded-full overflow-hidden mb-6 img-placeholder-warm"><img src="images/team-2.jpg" alt="陈曼琳" class="w-full h-full object-cover" onerror="this.style.display='none'" /></div>
+          <h3 class="text-lg font-serif text-charcoal">陈曼琳</h3>
+          <p class="text-gold text-xs tracking-wider uppercase mt-1">合伙人 · 软装设计总监</p>
+          <p class="text-gray-luxe text-sm mt-4 leading-relaxed max-w-xs mx-auto">米兰布雷拉美术学院硕士，10年软装设计经验。</p>
+        </div>
+        <div class="card-hover text-center reveal reveal-delay-3">
+          <div class="w-40 h-40 mx-auto rounded-full overflow-hidden mb-6 img-placeholder-dark"><img src="images/team-3.jpg" alt="王景行" class="w-full h-full object-cover" onerror="this.style.display='none'" /></div>
+          <h3 class="text-lg font-serif text-charcoal">王景行</h3>
+          <p class="text-gold text-xs tracking-wider uppercase mt-1">高级主创设计师</p>
+          <p class="text-gray-luxe text-sm mt-4 leading-relaxed max-w-xs mx-auto">中央美术学院建筑学硕士，专注别墅建筑改造与空间重构。</p>
+        </div>
+        <div class="card-hover text-center reveal reveal-delay-4">
+          <div class="w-40 h-40 mx-auto rounded-full overflow-hidden mb-6 img-placeholder-luxury"><img src="images/team-4.jpg" alt="林语桐" class="w-full h-full object-cover" onerror="this.style.display='none'" /></div>
+          <h3 class="text-lg font-serif text-charcoal">林语桐</h3>
+          <p class="text-gold text-xs tracking-wider uppercase mt-1">灯光与智能设计总监</p>
+          <p class="text-gray-luxe text-sm mt-4 leading-relaxed max-w-xs mx-auto">德国魏玛包豪斯大学硕士，专注灯光设计与智能家居整合。</p>
+        </div>
+      </div>
+      <div class="text-center mt-14 reveal"><a href="team.html" class="btn-outline">认识整个团队 &rarr;</a></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 lg:py-32 px-6">
+    <div class="container mx-auto max-w-5xl">
+      <div class="text-center mb-16 reveal">
+        <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; TESTIMONIALS &mdash;</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mt-6 mb-6 text-charcoal">业主真实评价</h2>
+        <div class="divider-gold"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="testimonial-card card-hover reveal reveal-delay-1">
+          <p class="text-gray-luxe text-sm leading-relaxed italic mb-8">"与LUSSO团队的合作是一次非常愉悦的体验。从最初的设计沟通到最后的软装摆场，每一个环节都展现了极高的专业度。"</p>
+          <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold">李</div><div><h4 class="text-sm font-medium text-charcoal">李先生 &amp; 王女士</h4><p class="text-xs text-gray-luxe">佘山·独栋别墅业主</p></div></div>
+        </div>
+        <div class="testimonial-card card-hover reveal reveal-delay-2">
+          <p class="text-gray-luxe text-sm leading-relaxed italic mb-8">"选择LUSSO是因为被他们实景案例中那种克制而高级的设计语言所吸引。事实证明我们的选择是对的，每个细节都经得起推敲。"</p>
+          <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold">赵</div><div><h4 class="text-sm font-medium text-charcoal">赵女士</h4><p class="text-xs text-gray-luxe">汤臣一品·大平层业主</p></div></div>
+        </div>
+        <div class="testimonial-card card-hover reveal reveal-delay-3">
+          <p class="text-gray-luxe text-sm leading-relaxed italic mb-8">"精装房改造前我们很担心效果，但LUSSO团队给了我们很大的信心。他们在保留原有结构的基础上，通过材质升级和灯光设计让整个空间气质完全改变了。"</p>
+          <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold">刘</div><div><h4 class="text-sm font-medium text-charcoal">刘先生</h4><p class="text-xs text-gray-luxe">静安府·精装改造业主</p></div></div>
+        </div>
+        <div class="testimonial-card card-hover reveal reveal-delay-4">
+          <p class="text-gray-luxe text-sm leading-relaxed italic mb-8">"朋友推荐来的，看完他们的案例后立刻就确定了合作。整个装修过程比我们想象中顺利太多，每个节点都井然有序。"</p>
+          <div class="flex items-center gap-4"><div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center text-gold font-serif font-bold">孙</div><div><h4 class="text-sm font-medium text-charcoal">孙小姐</h4><p class="text-xs text-gray-luxe">西郊·庄园别墅业主</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 lg:py-32 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 img-placeholder-dark"><div class="absolute inset-0 bg-charcoal/80"></div></div>
+    <div class="container mx-auto max-w-4xl relative z-10 text-center">
+      <div class="reveal">
+        <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; BOOKING &mdash;</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif text-white mt-6 mb-6">预约您的专属设计咨询</h2>
+        <div class="w-16 h-[2px] bg-gold mx-auto mb-8"></div>
+        <p class="text-white/60 text-base md:text-lg max-w-2xl mx-auto mb-10">填写您的需求，我们将为您匹配最合适的设计师，提供一对一的专属设计咨询服务。</p>
+        <a href="booking.html" class="btn-primary !text-base !px-10 !py-4">立即预约<svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white/70 py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="reveal"><a href="index.html" class="font-serif text-2xl font-bold text-white">LUSSO<span class="text-gold">.</span></a><p class="text-sm text-white/40 mt-3 leading-relaxed">意式轻奢室内设计工作室<br />专注高端私宅·别墅·大平层全案设计</p></div>
+        <div class="reveal reveal-delay-1"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">快速链接</h4><ul class="space-y-3"><li><a href="index.html" class="footer-link">首页</a></li><li><a href="cases.html" class="footer-link">设计案例</a></li><li><a href="services.html" class="footer-link">服务项目</a></li><li><a href="team.html" class="footer-link">设计师团队</a></li><li><a href="about.html" class="footer-link">关于我们</a></li></ul></div>
+        <div class="reveal reveal-delay-2"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">服务项目</h4><ul class="space-y-3"><li><a href="services.html" class="footer-link">全案设计</a></li><li><a href="services.html" class="footer-link">软装陈设</a></li><li><a href="services.html" class="footer-link">精装改造</a></li><li><a href="services.html" class="footer-link">灯光设计</a></li><li><a href="services.html" class="footer-link">智能家居</a></li></ul></div>
+        <div class="reveal reveal-delay-3"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">联系我们</h4><ul class="space-y-3 text-sm"><li class="flex items-start gap-3"><svg class="w-4 h-4 mt-0.5 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>上海市徐汇区衡山路880号<br />LUSSO设计中心</span></li><li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>400-xxx-xxxx</span></li><li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><span>hello@lusso-design.com</span></li></ul></div>
+      </div>
+      <div class="border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-white/30">&copy; 2025 LUSSO INTERIOR. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="booking.html" class="floating-cta"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>免费预约设计</a>
+
+  <script src="main.js"></script>
+</body>
+</html>
+

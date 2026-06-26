@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我们 | LUSSO·意式轻奢室内设计</title>
+  <meta name="description" content="关于LUSSO INTERIOR — 始于2018年的高端室内设计工作室，专注意式轻奢与现代极简风格。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: "#D4A574", "gold-dark": "#C4966A", "gold-light": "#E8D5C0",
+            cream: "#F5F0EB", charcoal: "#1A1A1A",
+            "gray-luxe": "#8C8C8C", "gray-light": "#F2F2F2",
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Inter", "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-cream text-[#4A4A4A] font-sans">
+
+  <!-- HEADER -->
+  <header id="header" class="fixed top-0 left-0 w-full z-50 scrolled">
+    <nav class="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between">
+      <a href="index.html" class="nav-logo font-serif text-2xl lg:text-3xl font-bold text-charcoal tracking-wide">LUSSO<span class="text-gold">.</span><span class="block text-[10px] font-sans font-light tracking-[0.3em] text-gray-luxe -mt-1">INTERIOR DESIGN</span></a>
+      <div class="hidden lg:flex items-center space-x-10">
+        <a href="index.html" class="nav-link">首页</a><a href="cases.html" class="nav-link">设计案例</a><a href="services.html" class="nav-link">服务项目</a><a href="team.html" class="nav-link">设计师</a><a href="about.html" class="nav-link active">关于我们</a><a href="contact.html" class="nav-link">联系我们</a>
+      </div>
+      <a href="booking.html" class="hidden lg:inline-flex items-center gap-2 bg-gold text-white px-6 py-2.5 text-sm font-medium tracking-wider hover:bg-gold-dark rounded"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>免费预约</a>
+      <button id="menu-toggle" class="lg:hidden flex flex-col gap-1.5 p-2"><span class="block w-6 h-[1.5px] bg-charcoal"></span><span class="block w-6 h-[1.5px] bg-charcoal"></span><span class="block w-5 h-[1.5px] bg-charcoal"></span></button>
+    </nav>
+    <div id="mobile-menu" class="lg:hidden bg-cream/98 backdrop-blur-xl border-b border-gold/10"><div class="px-6 py-6 space-y-4"><a href="index.html" class="block py-2 text-base text-charcoal hover:text-gold">首页</a><a href="cases.html" class="block py-2 text-base text-charcoal hover:text-gold">设计案例</a><a href="services.html" class="block py-2 text-base text-charcoal hover:text-gold">服务项目</a><a href="team.html" class="block py-2 text-base text-charcoal hover:text-gold">设计师团队</a><a href="about.html" class="block py-2 text-base text-charcoal hover:text-gold">关于我们</a><a href="contact.html" class="block py-2 text-base text-charcoal hover:text-gold">联系我们</a><a href="booking.html" class="block mt-4 bg-gold text-white text-center py-3 text-sm rounded">免费预约设计</a></div></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="pt-32 pb-20 lg:pt-40 lg:pb-24 px-6 relative img-placeholder-warm">
+    <div class="absolute inset-0 bg-charcoal/60"></div>
+    <div class="container mx-auto max-w-5xl relative z-10 text-center">
+      <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; ABOUT &mdash;</span>
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif text-white mt-6 mb-6">关于LUSSO</h1>
+      <div class="divider-gold"></div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section class="py-20 lg:py-28 px-6">
+    <div class="container mx-auto max-w-5xl">
+      <div class="grid lg:grid-cols-2 gap-16 items-center reveal">
+        <div><h2 class="text-2xl md:text-3xl font-serif text-charcoal mb-6">始于2018<br />源于对设计的执着</h2><div class="divider-gold-left mb-8"></div><p class="text-gray-luxe text-sm leading-relaxed mb-4">LUSSO INTERIOR 由张奕辰先生与陈曼琳女士于2018年创立于上海。名字"LUSSO"取自意大利语，意为"奢华"——但我们的奢华不来自繁复的装饰，而是源于对品质、比例与细节的极致追求。</p><p class="text-gray-luxe text-sm leading-relaxed mb-4">成立至今，我们已为超过500位高端业主提供设计服务，项目涵盖独栋别墅、联排别墅、大平层公寓及商业空间。我们的作品多次刊登于《安邸AD》、《ELLE DECORATION家居廊》等国际设计媒体。</p><p class="text-gray-luxe text-sm leading-relaxed">2023年，我们迁入位于衡山路的新设计中心，拥有近千平米的办公与材料展示空间，为客户提供更优质的沉浸式设计体验。</p></div>
+        <div class="aspect-[4/3] img-placeholder-luxury rounded"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="py-20 px-6 bg-white">
+    <div class="container mx-auto max-w-5xl text-center reveal">
+      <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; AWARDS &mdash;</span>
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-serif mt-6 mb-12 text-charcoal">荣誉与奖项</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div><div class="w-16 h-16 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><h3 class="text-base font-serif text-charcoal">德国iF设计奖</h3><p class="text-xs text-gray-luxe mt-2">2023 · 室内建筑设计</p></div>
+        <div><div class="w-16 h-16 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><h3 class="text-base font-serif text-charcoal">Good Design Award</h3><p class="text-xs text-gray-luxe mt-2">2022 · 住宅空间</p></div>
+        <div><div class="w-16 h-16 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><h3 class="text-base font-serif text-charcoal">AD100</h3><p class="text-xs text-gray-luxe mt-2">2024 · 中国最具影响力设计</p></div>
+        <div><div class="w-16 h-16 mx-auto bg-gold/10 rounded-full flex items-center justify-center mb-4"><svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg></div><h3 class="text-base font-serif text-charcoal">ELLE Decoration</h3><p class="text-xs text-gray-luxe mt-2">2025 · 年度最佳住宅设计</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="py-20 px-6">
+    <div class="container mx-auto max-w-5xl text-center reveal">
+      <span class="text-gold text-sm tracking-[0.25em] uppercase font-medium">&mdash; PARTNERS &mdash;</span>
+      <h2 class="text-2xl md:text-3xl font-serif mt-6 mb-10 text-charcoal">合作品牌</h2>
+      <div class="flex flex-wrap justify-center gap-10 opacity-40">
+        <span class="text-lg font-serif tracking-wider">Minotti</span>
+        <span class="text-lg font-serif tracking-wider">Poliform</span>
+        <span class="text-lg font-serif tracking-wider">B&amp;B Italia</span>
+        <span class="text-lg font-serif tracking-wider">Flos</span>
+        <span class="text-lg font-serif tracking-wider">Porro</span>
+        <span class="text-lg font-serif tracking-wider">Molteni&amp;C</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white/70 py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="reveal"><a href="index.html" class="font-serif text-2xl font-bold text-white">LUSSO<span class="text-gold">.</span></a><p class="text-sm text-white/40 mt-3">意式轻奢室内设计工作室</p></div>
+        <div class="reveal reveal-delay-1"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">快速链接</h4><ul class="space-y-3"><li><a href="index.html" class="footer-link">首页</a></li><li><a href="cases.html" class="footer-link">设计案例</a></li><li><a href="services.html" class="footer-link">服务项目</a></li><li><a href="team.html" class="footer-link">设计师团队</a></li><li><a href="about.html" class="footer-link">关于我们</a></li></ul></div>
+        <div class="reveal reveal-delay-2"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">联系</h4><ul class="space-y-3 text-sm"><li>上海市徐汇区衡山路880号</li><li>400-xxx-xxxx</li></ul></div>
+        <div class="reveal reveal-delay-3"><h4 class="text-white text-sm font-medium tracking-wider uppercase mb-6">预约</h4><a href="booking.html" class="btn-primary !text-xs !px-6 !py-3">免费预约设计</a></div>
+      </div>
+      <div class="border-t border-white/10 mt-16 pt-8 text-center"><p class="text-xs text-white/30">&copy; 2025 LUSSO INTERIOR. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <a href="booking.html" class="floating-cta"><svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>免费预约设计</a>
+  <script src="main.js"></script>
+</body>
+</html>
+
